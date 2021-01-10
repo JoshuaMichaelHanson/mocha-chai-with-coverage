@@ -1,9 +1,14 @@
 var getRockPaperScissorsWinner = require('../public/rps-module.js');
 var expect = require('chai').expect;
 
+/**
+ * For part 2 please comment out one entire describe section
+ * to get the coverage under 100%
+ */
+
 describe("getRockPaperScissorsWinner", () => {
   console.log('In describe function');
-  // Work around undefined function check.
+  
   describe("ties", () => {
     it("rock ties with rock", () => {
       expect(getRockPaperScissorsWinner("rock", "rock")).to.equal("tie");
@@ -17,18 +22,8 @@ describe("getRockPaperScissorsWinner", () => {
       );
     });
   });
+  
   describe("user wins", () => {
-    describe("bomb beats everything", () => {
-      it("bomb beats rock", () => {
-        expect(getRockPaperScissorsWinner("bomb", "rock")).to.equal("user");
-      });
-      it("bomb beats paper", () => {
-        expect(getRockPaperScissorsWinner("bomb", "paper")).to.equal("user");
-      });
-      it("bomb beats scissors", () => {
-        expect(getRockPaperScissorsWinner("bomb", "scissors")).to.equal("user");
-      });
-    });
     it("rock beats scissors", () => {
       expect(getRockPaperScissorsWinner("rock", "scissors")).to.equal("user");
     });
@@ -39,6 +34,7 @@ describe("getRockPaperScissorsWinner", () => {
       expect(getRockPaperScissorsWinner("scissors", "paper")).to.equal("user");
     });
   });
+  
   describe("computer wins", () => {
     it("rock beats scissors", () => {
       expect(getRockPaperScissorsWinner("scissors", "rock")).to.equal(
