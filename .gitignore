@@ -1,38 +1,4 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@JoshuaMichaelHanson 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-github
-/
-gitignore
-3.2k
-112k
-60.7k
-Code
-Pull requests
-247
-Actions
-Projects
-Security
-Insights
-gitignore/Node.gitignore
-@ch4ot1c
-ch4ot1c Add .yarn/install-state.gz to Node.gitignore (#3407)
-…
-Latest commit 7293c14 on May 14
- History
- 58 contributors
-@stuartpb@shiftkey@SimonSiefke@TennyZhuang@venatoria@ro31337@Richienb@melonmanchan@gouthamve@jucrouzet@cheddar@arcresu
-116 lines (86 sloc)  1.77 KB
+.idea
   
 # Logs
 logs

@@ -2,18 +2,37 @@
 
 **This example builds on Example 1**
 
-Using the JavaScript test framework [Mocha](https://mochajs.org/) and BDD/TDD assertion library [Chai](https://www.chaijs.com/) we will execute tests for the classic game rock-paper-scissors. Unlike Example 1 these tests do **NOT** run directly in the browser.  We will be executing a [npm command](https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/) in the glitch command line.  We are also adding an additional library to the **mix** called [Istanbul](https://istanbul.js.org/docs/tutorials/mocha/) that allows us to understand how much code coverage the tests are providing.  
+Using the JavaScript test framework [Mocha](https://mochajs.org/) and BDD/TDD assertion library [Chai](https://www.chaijs.com/) we will execute tests for the classic game rock-paper-scissors. Unlike Example 1 these tests do **NOT** run directly in the browser. We execute the tests using npm and measure coverage using [Istanbul / nyc](https://istanbul.js.org/docs/tutorials/mocha/).
 
-## To execute the tests please follow these simple steps ##
+Repository:
+https://github.com/JoshuaMichaelHanson/mocha-chai-with-coverage.git
 
-    - Ensure you have remixed Example 2 on the Glitch platform
-    - Edit the project
-    - On the bottom left of the screen there is a drop-up called Tools
-    - Click the tools button -> Click 'Terminal' button
-    - This opens the 'bash' shell command terminal
-    - type the command 'npm test'
-    - Congratulations!  You should see all tests pass with 100% coverage
+## Getting Started
 
-## What did we just do? ##
+### Recommended (Preferred) way — GitHub Codespaces
 
-Please open the  [package.json](https://docs.npmjs.com/cli/v6/configuring-npm/package-json) file located in the glitch project to see the command we just executed
+- Fork this repository to your own GitHub account using the "Fork" button at the top right of the repository page.
+- After forking, open your forked repository on GitHub.
+- Create a Codespace from your forked repository by clicking "Code" -> "Open with Codespaces" -> "Create codespace on main".
+- When the Codespace is created, it will automatically install dependencies (`npm install` is run by the Codespaces setup).
+
+### Local Development
+
+- Fork this repository to your own GitHub account.
+- Clone your fork locally:
+  ```bash
+  git clone https://github.com/YOUR-ACCOUNT/mocha-chai-with-coverage.git
+  cd mocha-chai-with-coverage
+  ```
+- Install dependencies locally:
+  ```bash
+  npm install
+  ```
+
+## Running Tests
+
+- Once dependencies are installed (either in Codespaces or locally), open a terminal and run the tests with:
+
+  ```bash
+    npm test
+  ```
